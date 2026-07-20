@@ -167,6 +167,11 @@ function App() {
           </div>
         </section>
       )}
+      <footer className="footer">
+        <p>
+          Designed & Developed by <strong>Yosri Khedher</strong> © {new Date().getFullYear()}
+        </p>
+      </footer>
     </main>
   );
 }
