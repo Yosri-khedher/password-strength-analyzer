@@ -12,14 +12,15 @@ app = FastAPI(
 
 
 origins = [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://password-strength-analyzer-eight-xi.vercel.app",
 ]
 
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
